@@ -41,6 +41,12 @@ client.listNotebooks(oauthAccessToken).then(function(results){
 //List LinkedNotebooks
 client.listLinkedNotebooks(oauthAccessToken).then(function(results){
   console.log(results);
+  return client.autehnticateToSharedNotebook(oauthAccessToken, results[0]);
+}).then(function(results){
+  console.log(results);
+  return client.getSharedNotebookByAuth(oauthAccessToken, results.authenticationToken, notebook);
+}).then(function(results){
+  console.log(results);
 }).catch(function(err){
   console.log(err);
 });
