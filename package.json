@@ -1,0 +1,27 @@
+{
+  "name": "evernote-utils",
+  "version": "1.0.0",
+  "description": "A wrapper for Evernote API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDBox/evernoteapi_caller.git"
+  },
+  "keywords": [
+    "Evernote",
+    "API"
+  ],
+  "author": "Michael Bawiec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MDBox/evernoteapi_caller/issues"
+  },
+  "homepage": "https://github.com/MDBox/evernoteapi_caller#readme",
+  "dependencies": {
+    "evernote": "^1.25.82",
+    "request": "^2.69.0"
+  }
+}
